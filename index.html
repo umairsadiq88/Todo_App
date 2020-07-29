@@ -14,12 +14,18 @@
     <h1><span class="styling">Todo</span> List</h1>
 
     <div class="inputdiv"> 
-        <input class="input" type="text" placeholder="What Do You Want to Do ......" />
-        <button class="add"><i class="fas fa-plus-circle"></i></button>
+        <input class="input" type="text" id="todo-item" placeholder="What Do You Want to Do ......" />
+        <button onclick="addTodo()" class="add"><i class="fas fa-plus-circle"></i></button>
+        <button onclick="deleteAll()">DELETE ALL</button>
+
     </div>
 
-    <div class="container">
-       
+    <div  class="container">
+
+       <ul id="list">
+
+
+       </ul>
     </div>
 
 
