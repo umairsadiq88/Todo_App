@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -25,12 +24,7 @@ h1{
     text-transform: uppercase;
     font-weight: 800;
 }
-/* 
-.styling{
-    font-weight: 800;
-    color: lime;
 
-} */
 
 .inputdiv{
 display: flex;
@@ -46,17 +40,18 @@ align-items: center;
     width: 350px;
     font-size: 1.15rem;
     margin:0.25rem;
-    border-radius: 25px;
+    border-radius: 15px;
     transition: .5s;
-   
 }
-.btn{
-    background-color: indigo;
-}
+
+
+
 .add{
+    font-size: 3rem;
+    align-items: center;
     height: 50px;
     width: 50px;
-    border-radius: 25px;
+    border-radius: 15px;
     outline: none;
     border: none;
     background-color: #fff;
@@ -70,7 +65,32 @@ align-items: center;
 
 .add:hover{
     opacity: 0.7;
+    background-color:cyan;
 }
+
+.delAll{
+    font-size: 1rem;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    margin: 0.25rem;
+    background-color: crimson;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.delAll:hover{
+    opacity: 0.7;
+    background-color: coral;
+}
+
+
 
 .container{
     display: flex;
@@ -78,28 +98,34 @@ align-items: center;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     
 }
 
 .item{
     padding: 0.5rem;
     margin-bottom: 1.5rem;
-    border-bottom: 4px solid #fff;
-
+    border-bottom: 5px solid #fff;
+    font-size: 2rem;
+    
 }
 
-.item_input{
+.item input{
     background: none;
     outline:none;
-    color: #fff;
+    color: green;
+    list-style: lower-roman;
     border:none;
     width: 245px;
     font-size: 1.4rem;
 }
 
-.editButton{
+
+
+.editBtn{
+    background-color: aquamarine;
     font-size: 1.4rem;
+    margin:0 0.5rem;
     font-family: 'Hind', sans-serif;
     background: none;
     outline: none;
@@ -107,7 +133,8 @@ align-items: center;
     border:none;
 }
 
-.removeButton{
+.DelBtn{
+    background-color: indigo;
     font-size: 1.4rem;
     margin:0 0.5rem;
     font-family: 'Hind' sans-serif;
@@ -115,4 +142,5 @@ align-items: center;
     outline: none;
     color: #E00;
     border:none;
+
 }
