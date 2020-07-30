@@ -6,14 +6,19 @@
 
 body {
     height: 100%;
-    background-color: grey;
-    box-sizing: border-box;
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    
 }
 
 h1{
     color: #fff;
     font-size: 4rem;
     font-weight: 50;
+    color: brown;
+    font-size: 3rem;
+    font-weight: bold;
     margin: 1rem 0 3rem;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -24,6 +29,12 @@ h1{
     color: lime;
     text-transform: uppercase;
     font-weight: 800;
+.styling {
+    color:midnightblue;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
 }
 
@@ -47,7 +58,7 @@ align-items: center;
 
 
 
-.add{
+.add  {
     font-size: 3rem;
     align-items: center;
     height: 50px;
@@ -100,7 +111,6 @@ align-items: center;
     align-items: center;
     text-align: center;
     margin-top: 4rem;
-    
 }
 
 .item{
@@ -113,32 +123,42 @@ align-items: center;
     list-style:square; 
     border: none;
     width: 245px;
+.item, li {
+    font-size: 2.5rem;
+  
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+        
 }
 
 .item input{
     background: none;
     outline:none;
     color: green;
-    list-style: lower-roman;
     border:none;
     width: 245px;
+ }
+
+
+
+
+/* EditBtn */
+.fa-edit {
+    border: none;
+    background-color: none;
     font-size: 1.4rem;
-}
-
-
-
-.editBtn{
     background-color: aquamarine;
-    font-size: 1.4rem;
     margin:0 0.5rem;
     font-family: 'Hind', sans-serif;
     background: none;
     outline: none;
-    color: lime;
+    color:blue;
     border:none;
 }
 
-.DelBtn{
+
+/* DeleteBtn */
+.fa-trash{
     background-color: indigo;
     font-size: 1.4rem;
     margin:0 0.5rem;
@@ -147,5 +167,5 @@ align-items: center;
     outline: none;
     color: #E00;
     border:none;
-
 }
+
