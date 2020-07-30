@@ -11,16 +11,16 @@ function addTodo() {
 
     //create delete button
     var delBtn = document.createElement("button")
-    var delText = document.createTextNode("Delete")
-    delBtn.setAttribute("class", "DelBtn")
+    var delText = document.createTextNode("")
+    delBtn.setAttribute("class", "fa fa-trash")
     delBtn.setAttribute("onclick", "deleteItem(this)")
     delBtn.appendChild(delText)
    
     //create edit button
     var editBtn = document.createElement('button')
-    var editText = document.createTextNode("Edit")
+    var editText = document.createTextNode("")
     editBtn.appendChild(editText)
-    editBtn.setAttribute("class", "editBtn")
+    editBtn.setAttribute("class", "fas fa-edit")
     editBtn.setAttribute("onclick", "editItem(this)") 
 
     li.appendChild(editBtn)
@@ -35,6 +35,7 @@ function addTodo() {
 function editItem(e){
     var val = e.parentNode.firstChild.nodeValue;
     var editValue = prompt("Enter edit value", val)
+
     
     e.parentNode.firstChild.nodeValue = editValue
     
